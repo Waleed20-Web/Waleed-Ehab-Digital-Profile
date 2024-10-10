@@ -1,0 +1,408 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header img {
+    width: 150px; /* تعديل الحجم حسب الحاجة */
+    border-radius: 50%; /* لجعل الصورة دائرية */
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    background-color: #000000;
+    padding: 10px;
+    border-left: 3px solid #0083b0;
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    margin-bottom: 20px;
+}
+
+.bar {
+    background: #e0e0e0;
+    height: 25px;
+    position: relative;
+}
+
+.level {
+    background: #0083b0;
+    height: 100%;
+    position: absolute;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#stats {
+    display: flex;
+    justify-content: space-around;
+    background: #f9f9f9;
+    padding: 20px 0;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 3em;
+    color: #0083b0;
+}
+
+.stat p {
+    font-size: 1.2em;
+}
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+button#dark-mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+/* تصميم قسم وسائل التواصل الاجتماعي */
+#social-media {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* تصميم العنوان */
+#social-media h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* تصميم الأزرار */
+.social-btn {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* ألوان الأزرار */
+.facebook {
+    background-color: #3b5998; /* لون فيسبوك */
+}
+
+.twitter {
+    background-color: #1da1f2; /* لون تويتر */
+}
+
+.instagram {
+    background-color: #e4405f; /* لون إنستغرام */
+}
+
+.linkedin {
+    background-color: #0077b5; /* لون لينكد إن */
+}
+
+/* تأثير عند تمرير الماوس فوق الأزرار */
+.social-btn:hover {
+    opacity: 0.8;
+}
+/* تصميم العنوان */
+#download h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* تصميم القسم */
+#download {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 40px auto;
+    max-width: 400px;
+}
+
+/* تصميم الزر */
+.download-btn {
+    display: inline-block;
+    background-color: #0083b0;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 131, 176, 0.3);
+}
+
+/* تأثير عند تمرير الماوس فوق الزر */
+.download-btn:hover {
+    background-color: #005f80;
+    box-shadow: 0 6px 12px rgba(0, 131, 176, 0.5);
+}
+/* تأثير عند تمرير الماوس فوق الزر */
+.download-btn:hover {
+    background-color: #005f80;
+    box-shadow: 0 6px 12px rgba(0, 131, 176, 0.5);
+}
+
+
+/* تنسيق شريط التنقل */
+nav {
+    background: #0083b0; /* لون الخلفية */
+    position: fixed; /* جعل الشريط ثابت */
+    top: 0;
+    width: 100%; /* عرض كامل */
+    z-index: 1000; /* لجعل الشريط فوق المحتوى */
+}
+
+nav ul {
+    list-style: none; /* إزالة النقاط */
+    display: flex; /* جعل العناصر في صف واحد */
+    justify-content: center; /* محاذاة العناصر في الوسط */
+    padding: 10px 0; /* إضافة حشوة داخلية */
+}
+
+nav ul li {
+    margin: 0 15px; /* إضافة هوامش بين العناصر */
+}
+
+nav ul li a {
+    color: white; /* لون النص */
+    text-decoration: none; /* إزالة الخط تحت النص */
+    padding: 5px 10px; /* إضافة حشوة داخلية للنص */
+    transition: background 0.3s; /* تأثير انتقال للخلفية */
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2); /* تأثير عند التمرير */
+    border-radius: 5px; /* جعل الزوايا دائرية */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+body {
+    background: linear-gradient(to right, #0083b0, #00b4db);
+    color: #fff; /* تغيير لون النص إلى الأبيض */
+}
+
+section {
+    background: rgba(255, 255, 255, 0.9); /* خلفية بيضاء مع شفافية */
+    color: #333; /* استعادة لون النص الأصلي */
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+form input[type="WALEED EHAB"], form input[type="Waleedehab094@gmail.com"], form textarea {
+    border: 2px solid #e0e0e0;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus, form input[type="email"]:focus, form textarea:focus {
+    border-color: #0083b0;
+}
+
+/* Header styles */
+header {
+    background: #0083b0;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+header img {
+    width: 150px; /* حجم الصورة الشخصية */
+    border-radius: 50%; /* لجعل الصورة دائرية */
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header h2 {
+    font-size: 1.5rem;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+/* Section styles */
+section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: #0083b0;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+body {
+    background: url('photo_2024-10-10_16-41-57.jpg') no-repeat center center fixed;
+    background-size: cover;
+    animation: moveBackground 30s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* خلفية بيضاء */
+    margin: 0;
+    padding: 20px;
+}
+
+.mind-map {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.main-node {
+    background-color: #f0f0f0; /* لون الخلفية للعقدة الرئيسية */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sub-nodes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.node {
+    margin: 10px;
+    padding: 15px;
+    background-color: #e7f1ff; /* لون خلفية للعقدة الفرعية */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 0 30%; /* مرونة الحجم */
+    min-width: 200px; /* الحد الأدنى لعرض العقدة */
+}
+
+h2, h3 {
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: none; /* إزالة النقاط من القوائم */
+    padding: 0;
+}
+
+/* styles.css */
+
+* {
+    box-sizing: border-box; /* لضبط حجم العناصر بشكل دقيق */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* لون الخلفية */
+}
+
+header {
+    background-color: #0083b0; /* لون خلفية الرأس */
+    color: white;
+    padding: 20px;
+    text-align: center; /* محاذاة النص في الوسط */
+}
+
+.menu ul {
+    list-style-type: none; /* إزالة النقاط من القوائم */
+    padding: 0;
+}
+
+.menu li {
+    display: inline; /* عرض العناصر في صف */
+    margin-right: 20px; /* مسافة بين العناصر */
+}
+
+.menu a {
+    color: white; /* لون النص */
+    text-decoration: none; /* إزالة الخط أسفل النص */
+}
+
+@media (max-width: 600px) {
+    .menu li {
+        display: block; /* جعل القوائم عمودية على الشاشات الصغيرة */
+        margin: 10px 0;
+    }
+}
+
+main {
+    padding: 20px; /* إضافة مسافة داخلية */
+}
+
+section {
+    background-color: #fff; /* لون خلفية القسم */
+    padding: 20px;
+    border-radius: 8px; /* زوايا دائرية */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* تأثير ظل */
+    margin: 20px 0; /* مسافة بين الأقسام */
+}
+
+footer {
+    text-align: center; /* محاذاة النص في الوسط */
+    padding: 10px;
+    background-color: #0083b0; /* لون خلفية التذييل */
+    color: white; /* لون النص */
+}
+
